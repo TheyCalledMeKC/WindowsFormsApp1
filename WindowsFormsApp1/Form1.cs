@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         private Point lastCursorPos;
         private Point lastFormPos;
         DataTable dt = new DataTable();
-        List<Sheet_Model> listModel = new List<Sheet_Model>;
+        List<modal.Sheet_Model> listModel = new List<modal.Sheet_Model>();
         
         private void KhoiTaoDataTable()
         {
