@@ -8,7 +8,7 @@ using Microsoft.SqlServer.Server;
 
 namespace WindowsFormsApp1.modal
 {
-    public class Sheet_Model
+    public class Sheet_Model : IComparable<Sheet_Model>
     {
         private DateTime time;
         private string category;
@@ -24,6 +24,10 @@ namespace WindowsFormsApp1.modal
             this.priority = priority;
             this.task = task;
             this.done = done;
+        }
+        public int CompareTo(Sheet_Model other)
+        {
+            return this.getTime.CompareTo(other.getTime);
         }
         public void setTime(DateTime time) { this.time = time; }
         public DateTime getTime() { return time; }
