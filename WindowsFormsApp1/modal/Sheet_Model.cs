@@ -27,7 +27,7 @@ namespace WindowsFormsApp1.modal
         }
         public int CompareTo(Sheet_Model other)
         {
-            return this.getTime.CompareTo(other.getTime);
+            return this.getTime().CompareTo(other.getTime());
         }
         public void setTime(DateTime time) { this.time = time; }
         public DateTime getTime() { return time; }
